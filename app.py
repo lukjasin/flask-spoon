@@ -10,14 +10,6 @@ def index():
     favorite_pets = ['Frodek', 'Kajtek', 'Pajka', 'Lilka']
     return render_template('index.html', my_name=first_name, content=content, favorite_pets=favorite_pets)
 
-'''
-safe
-capitalize
-upper
-title
-trim
-striptags
-'''
 
 # second endpoint
 @app.route('/user/<name>')
