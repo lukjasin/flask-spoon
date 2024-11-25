@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask app</title>
+</head>
+<body>
+    <h1>Hello {{ my_name }}</h1>
+    <p>Content: {{ content|title }}</p>
+    <p>List:</p>
+        {% for pet in favorite_pets %}
+            {% if pet == 'Frodek' %}
+                {{ pet|upper }}
+            {% else %}
+                {{ pet|lower }}
+            {% endif %}
+            <br>
+        {% endfor %}
+    <br>
+    <br>
+    {{ favorite_pets.0 }}
+</body>
+</html>
